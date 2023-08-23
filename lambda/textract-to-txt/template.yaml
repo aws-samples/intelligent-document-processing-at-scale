@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Sam Template for a lambda that takes Textract JSON output
+  and outputs a txt to S3 
+
+  It is written to work only with the Textract CDK stack as it relies on the manifest file
+
+Globals:
+  Function:
+    Timeout: 900
+
+Resources:
+  TextractToTxt:
+    Type: AWS::Serverless::Function 
+    Properties:      
+      PackageType: Image
+      Architectures:
+        - x86_64
+
+    Metadata:
+      Dockerfile: Dockerfile
+      DockerContext: .
+      DockerTag: textract-to-txt
+

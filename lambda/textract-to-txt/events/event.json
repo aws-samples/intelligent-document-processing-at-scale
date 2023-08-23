@@ -1,0 +1,57 @@
+{
+  "ExecutedVersion": "$LATEST",
+  "Payload": {
+    "manifest": {
+      "s3Path": "s3://test-bench/curated_300/374458760_Redacted-1.png"
+    },
+    "mime": "image/png",
+    "classification": null,
+    "numberOfPages": 1
+  },
+  "SdkHttpMetadata": {
+    "AllHttpHeaders": {
+      "X-Amz-Executed-Version": [
+        "$LATEST"
+      ],
+      "x-amzn-Remapped-Content-Length": [
+        "0"
+      ],
+      "Connection": [
+        "keep-alive"
+      ],
+      "x-amzn-RequestId": [
+        "20f96dbb-fc36-424a-921e-403f58ac8a09"
+      ],
+      "Content-Length": [
+        "145"
+      ],
+      "Date": [
+        "Wed, 12 Jul 2023 15:11:11 GMT"
+      ],
+      "X-Amzn-Trace-Id": [
+        "root=1-64aec28e-f2a3068ed0fda7d9caa964a2;parent=2cc16f87a51a7593;sampled=0;lineage=f626366a:0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "HttpHeaders": {
+      "Connection": "keep-alive",
+      "Content-Length": "145",
+      "Content-Type": "application/json",
+      "Date": "Wed, 12 Jul 2023 15:11:11 GMT",
+      "X-Amz-Executed-Version": "$LATEST",
+      "x-amzn-Remapped-Content-Length": "0",
+      "x-amzn-RequestId": "20f96dbb-fc36-424a-921e-403f58ac8a09",
+      "X-Amzn-Trace-Id": "root=1-64aec28e-f2a3068ed0fda7d9caa964a2;parent=2cc16f87a51a7593;sampled=0;lineage=f626366a:0"
+    },
+    "HttpStatusCode": 200
+  },
+  "SdkResponseMetadata": {
+    "RequestId": "20f96dbb-fc36-424a-921e-403f58ac8a09"
+  },
+  "StatusCode": 200,
+  "textract_result": {
+    "TextractOutputJsonPath": "s3://serverlessidparchivepipe-serverlessidparchivepipe-xrome9n3vko6/textract-output/374458760_Redacted-12023-07-12T15:11:13.480277/374458760_Redacted-1.json"
+  }
+}

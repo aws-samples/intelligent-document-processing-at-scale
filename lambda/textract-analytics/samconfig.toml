@@ -1,0 +1,10 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "idp-rag-demo"
+resolve_s3 = true
+s3_prefix = "idp-rag-demo"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = ["StartFunction=506962462695.dkr.ecr.us-east-1.amazonaws.com/starts3sfn0f056cdc/startfunction70a55f27repo"]

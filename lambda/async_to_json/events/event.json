@@ -1,0 +1,57 @@
+{
+    "ExecutedVersion": "$LATEST",
+    "Payload": {
+        "manifest": {
+            "s3Path": "s3://test-bench/TBS/Scan Back.pdf"
+        },
+        "mime": "application/pdf",
+        "classification": null,
+        "numberOfPages": 9
+    },
+    "SdkHttpMetadata": {
+        "AllHttpHeaders": {
+            "X-Amz-Executed-Version": [
+                "$LATEST"
+            ],
+            "x-amzn-Remapped-Content-Length": [
+                "0"
+            ],
+            "Connection": [
+                "keep-alive"
+            ],
+            "x-amzn-RequestId": [
+                "2df17cd8-47dd-4c29-bd37-05fb53339dfa"
+            ],
+            "Content-Length": [
+                "132"
+            ],
+            "Date": [
+                "Wed, 12 Jul 2023 05:47:24 GMT"
+            ],
+            "X-Amzn-Trace-Id": [
+                "root=1-64ae3e6a-ee900f925ccf088d9a85dfec;parent=58d342519e69fcad;sampled=0;lineage=f626366a:0"
+            ],
+            "Content-Type": [
+                "application/json"
+            ]
+        },
+        "HttpHeaders": {
+            "Connection": "keep-alive",
+            "Content-Length": "132",
+            "Content-Type": "application/json",
+            "Date": "Wed, 12 Jul 2023 05:47:24 GMT",
+            "X-Amz-Executed-Version": "$LATEST",
+            "x-amzn-Remapped-Content-Length": "0",
+            "x-amzn-RequestId": "2df17cd8-47dd-4c29-bd37-05fb53339dfa",
+            "X-Amzn-Trace-Id": "root=1-64ae3e6a-ee900f925ccf088d9a85dfec;parent=58d342519e69fcad;sampled=0;lineage=f626366a:0"
+        },
+        "HttpStatusCode": 200
+    },
+    "SdkResponseMetadata": {
+        "RequestId": "2df17cd8-47dd-4c29-bd37-05fb53339dfa"
+    },
+    "StatusCode": 200,
+    "textract_result": {
+        "TextractTempOutputJsonPath": "s3://serverlessidparchivepipe-serverlessidparchivepipe-xrome9n3vko6/textract-temp-output/ff3e64dfac734c28fefa58e3d50570da2da158a42b073c91fa9d1e073a09622c"
+    }
+}

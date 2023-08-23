@@ -1,0 +1,9 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "decider-lambda"
+resolve_s3 = true
+s3_prefix = "decider-lambda"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = ["DeciderFunction=506962462695.dkr.ecr.us-east-1.amazonaws.com/deciderlambda929f8089/deciderfunctiona3c83ba1repo"]

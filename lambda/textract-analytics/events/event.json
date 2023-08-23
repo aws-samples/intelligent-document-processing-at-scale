@@ -1,0 +1,104 @@
+{
+  "ExecutedVersion": "$LATEST",
+  "Payload": {
+    "ExecutedVersion": "$LATEST",
+    "Payload": {
+      "manifest": {
+        "s3Path": "s3://test-bench/TBS/Scan Back.pdf"
+      },
+      "mime": "application/pdf",
+      "classification": null,
+      "numberOfPages": 9
+    },
+    "SdkHttpMetadata": {
+      "AllHttpHeaders": {
+        "X-Amz-Executed-Version": [
+          "$LATEST"
+        ],
+        "x-amzn-Remapped-Content-Length": [
+          "0"
+        ],
+        "Connection": [
+          "keep-alive"
+        ],
+        "x-amzn-RequestId": [
+          "4987a3ec-e34f-4d27-8287-f46c8691bb4f"
+        ],
+        "Content-Length": [
+          "132"
+        ],
+        "Date": [
+          "Wed, 12 Jul 2023 14:06:40 GMT"
+        ],
+        "X-Amzn-Trace-Id": [
+          "root=1-64aeb36e-24eead2a3b4afe332c4e6956;parent=434edc265866a29f;sampled=0;lineage=f626366a:0"
+        ],
+        "Content-Type": [
+          "application/json"
+        ]
+      },
+      "HttpHeaders": {
+        "Connection": "keep-alive",
+        "Content-Length": "132",
+        "Content-Type": "application/json",
+        "Date": "Wed, 12 Jul 2023 14:06:40 GMT",
+        "X-Amz-Executed-Version": "$LATEST",
+        "x-amzn-Remapped-Content-Length": "0",
+        "x-amzn-RequestId": "4987a3ec-e34f-4d27-8287-f46c8691bb4f",
+        "X-Amzn-Trace-Id": "root=1-64aeb36e-24eead2a3b4afe332c4e6956;parent=434edc265866a29f;sampled=0;lineage=f626366a:0"
+      },
+      "HttpStatusCode": 200
+    },
+    "SdkResponseMetadata": {
+      "RequestId": "4987a3ec-e34f-4d27-8287-f46c8691bb4f"
+    },
+    "StatusCode": 200,
+    "textract_result": {
+      "TextractTempOutputJsonPath": "s3://serverlessidparchivepipe-serverlessidparchivepipe-xrome9n3vko6/textract-temp-output/c64c57bd253eaf3050faccfcaf25e988e6d2ee96d938af7fcd71f8734ea5c367",
+      "TextractOutputJsonPath": "s3://serverlessidparchivepipe-serverlessidparchivepipe-xrome9n3vko6/textract-output/Scan Back2023-07-12T14:06:58.473140/Scan Back.json"
+    }
+  },
+  "SdkHttpMetadata": {
+    "AllHttpHeaders": {
+      "X-Amz-Executed-Version": [
+        "$LATEST"
+      ],
+      "x-amzn-Remapped-Content-Length": [
+        "0"
+      ],
+      "Connection": [
+        "keep-alive"
+      ],
+      "x-amzn-RequestId": [
+        "32dec43e-e527-49ae-9b8e-8464e0af4cd8"
+      ],
+      "Content-Length": [
+        "1505"
+      ],
+      "Date": [
+        "Wed, 12 Jul 2023 14:07:01 GMT"
+      ],
+      "X-Amzn-Trace-Id": [
+        "root=1-64aeb36e-24eead2a3b4afe332c4e6956;parent=2721e4a5ca018199;sampled=0;lineage=e6e982c5:0"
+      ],
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "HttpHeaders": {
+      "Connection": "keep-alive",
+      "Content-Length": "1505",
+      "Content-Type": "application/json",
+      "Date": "Wed, 12 Jul 2023 14:07:01 GMT",
+      "X-Amz-Executed-Version": "$LATEST",
+      "x-amzn-Remapped-Content-Length": "0",
+      "x-amzn-RequestId": "32dec43e-e527-49ae-9b8e-8464e0af4cd8",
+      "X-Amzn-Trace-Id": "root=1-64aeb36e-24eead2a3b4afe332c4e6956;parent=2721e4a5ca018199;sampled=0;lineage=e6e982c5:0"
+    },
+    "HttpStatusCode": 200
+  },
+  "SdkResponseMetadata": {
+    "RequestId": "32dec43e-e527-49ae-9b8e-8464e0af4cd8"
+  },
+  "StatusCode": 200
+}

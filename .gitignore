@@ -1,0 +1,37 @@
+# Web UI
+node_modules/
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+cdk.context.json
+-previous-parameters 
+# SAM dev stuff
+.aws-sam/
+
+# Personal Dev @timcon
+.env
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+.github
+.idea
+*.code-workspace
+.tome.md
+
+### OSX ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# pyenv
+.python-version
