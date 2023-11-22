@@ -1,5 +1,4 @@
 import os
-import json
 import logging
 from statistics import median
 import math
