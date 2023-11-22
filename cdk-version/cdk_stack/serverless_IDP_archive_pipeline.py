@@ -70,7 +70,7 @@ class ServerlessIDPArchivePipeline(Stack):
                                     removal_policy=RemovalPolicy.DESTROY,
                                     enforce_ssl=True,
                                     auto_delete_objects=False,
-                                    minimum_tLSVersion=1.2,
+                                    minimum_tls_version=1.2,                                    
                                     encryption=s3.BucketEncryption.S3_MANAGED,
                                     block_public_access=s3.BlockPublicAccess.BLOCK_ALL,
                                     )
