@@ -67,8 +67,13 @@ class ServerlessIDPArchivePipeline(Stack):
         
         document_bucket = s3.Bucket(self,
                                     "Serverless-IDP-Archive-Pipeline",
+                                    removal_policy=RemovalPolicy.DESTROY,
+                                    enforce_ssl=True,
                                     auto_delete_objects=False,
-                                    removal_policy=RemovalPolicy.DESTROY)
+                                    minimum_tLSVersion=1.2,
+                                    encryption=s3.BucketEncryption.S3_MANAGED,
+                                    block_public_access=s3.BlockPublicAccess.BLOCK_ALL,
+                                    )
                 
         s3_output_bucket = document_bucket.bucket_name
         
@@ -95,7 +100,7 @@ class ServerlessIDPArchivePipeline(Stack):
             self,
             f"{workflow_name}-TaskGenerate-map-decider",            
             lambda_function=lambda_custom_decider)
-
+        
         lambda_custom_decider.add_to_role_policy(
             iam.PolicyStatement(
                 effect=iam.Effect.ALLOW,
@@ -156,7 +161,7 @@ class ServerlessIDPArchivePipeline(Stack):
         textract_async_to_json = sfn_tasks.LambdaInvoke(
             self,
             f"{workflow_name}-TaskGenerate-async-to-json",            
-            lambda_function=textract_async_to_json_lambda)
+            lambda_function=textract_async_to_json_lambda)        
         
         textract_async_to_json_lambda.add_to_role_policy(
             iam.PolicyStatement(
@@ -183,7 +188,7 @@ class ServerlessIDPArchivePipeline(Stack):
             self,
             f"{workflow_name}-TaskGenerate-TextractToTxt",            
             lambda_function=lambda_textract_to_txt)
-
+                
         lambda_textract_to_txt.add_to_role_policy(
             iam.PolicyStatement(
                 effect=iam.Effect.ALLOW,
@@ -214,8 +219,8 @@ class ServerlessIDPArchivePipeline(Stack):
                 actions=["s3:GetObject", "s3:PutObject"],
                 resources=[bucket_arn, f"{bucket_arn}/*"],
             )
-        )
-
+        )        
+        
         async_chain = sfn.Chain.start(textract_async_task) \
                 .next(textract_async_to_json) \
                 .next(task_generate_lambda_textract_to_txt) \
